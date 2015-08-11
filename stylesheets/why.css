@@ -1,0 +1,195 @@
+<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine:bolditalic|Inconsolata:italic|Droid+Sans">
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+/* Here's the animation for the chapter heading */
+
+@keyframes chapin {
+  from {
+    opacity: 0;
+    padding-left: 1.6em;
+  }
+  to {
+    opacity: 1;
+    padding-left: 2.6em;
+  }
+}
+
+@-webkit-keyframes chapin {
+  from {
+    opacity: 0;
+    padding-left: 1.6em;
+  }
+  to {
+    opacity: 1;
+    padding-left: 2.6em;
+  }
+}
+/* Here's the animation for the gradient background and title */
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    margin-top: -1.6em;
+  }
+  to {
+    opacity: 1;
+    margin-top: 1.6em;
+  }
+}
+
+@-webkit-keyframes appear
+/* Safari and Chrome */
+
+{
+  from {
+    opacity: 0;
+    margin-top: -1.6em;
+  }
+  to {
+    opacity: 1;
+    margin-top: 1.6em;
+  }
+}
+/* Here's the animation for the body text */
+
+@keyframes overin {
+  0% {
+    opacity: 0;
+    margin-left: 2.6em;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+
+@-webkit-keyframes overin
+/* Safari and Chrome */
+
+{
+  0% {
+    opacity: 0;
+    margin-left: 2.6em;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+
+body {
+  font-size: 16px;
+  line-height: 26px;
+  font-family: 'AnjaliOldLipi', serif;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: normal;
+}
+
+h1 {
+  font-family: 'Tangerine', san-serif;
+  text-align: center;
+  font-size: 11em;
+  margin-top: 0.4;
+  line-height: 1em;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.4);
+  text-shadow: 4px 4px 4px #aaa
+}
+
+h1 span {
+  font-size: 2.618em;
+  position: relative;
+  top: 0.4em;
+  right: 0.1em;
+  color: #ffbf00;
+  z-index: -1;
+  -webkit-text-stroke: 0px rgba(0, 0, 0, 0);
+}
+
+h2 {
+  opacity: 1;
+  font-size: 1.6em;
+  text-align: center;
+  margin-top: 1.6em;
+  margin-left: 4.2em;
+}
+
+h2 span {
+  font-size: 1em;
+  font-style: italic;
+  font-size: 0.6em;
+}
+
+h3 {
+  opacity: 0;
+  font-size: 2.6em;
+  font-style: italic;
+  color: #666666;
+  margin-top: 1em;
+  margin-bottom: 0.6em;
+  padding-left: 2.6em;
+  animation: chapin ease 2.2s;
+  animation-delay: 3.8s;
+  animation-fill-mode: forwards;
+  -webkit-animation: chapin ease 2.2s;
+  -webkit-animation-delay: 3.8s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#container {
+  opacity: 0;
+  width: 1000px;
+  margin: 0 auto;
+  background: #fffaec;
+  box-shadow: 0 0 150px 40px #fffaec;
+  animation: appear 1s;
+  animation-fill-mode: forwards;
+  -webkit-animation: appear linear 1s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+header {
+  opacity: 0;
+  margin-top: 1.6em;
+  animation: appear 3s;
+  animation-delay: 1s;
+  animation-fill-mode: fowards;
+  -webkit-animation: appear 5s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+article {
+  margin-left: 150px;
+  opacity: 0;
+  animation: overin ease 2s;
+  animation-delay: 4s;
+  animation-fill-mode: fowards;
+  -webkit-animation: overin ease 2s;
+  -webkit-animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+p {
+  width: 540px;
+  margin: 0 auto 1.6em auto;
+  letter-spacing: 0.01em;
+}
+
+.dcap {
+  float: left;
+  font-size: 4.23606797749979em;
+  padding: 18px 5px 5px 0;
+  color: #ffbf00;
+  -webkit-text-stroke: 1px rgba(255, 191, 0, 0.4);
+}
